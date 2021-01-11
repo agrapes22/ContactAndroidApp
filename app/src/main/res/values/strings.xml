@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ContactApp</string>
+    <string name="personID">"ID: "</string>
+</resources>

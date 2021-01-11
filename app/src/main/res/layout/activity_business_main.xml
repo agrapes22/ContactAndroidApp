@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_busId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="ID: "
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_busName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Name: "
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_busId" />
+
+    <TextView
+        android:id="@+id/tv_busPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Phone: "
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_busName" />
+
+    <TextView
+        android:id="@+id/tv_busPicNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Photo Number:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_busHours" />
+
+    <TextView
+        android:id="@+id/tv_busPicURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Photo URL:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_busPicNum" />
+
+    <TextView
+        android:id="@+id/tv_busPicDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Photo Date:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_busPicURL" />
+
+    <TextView
+        android:id="@+id/tv_busPicDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Photo Description:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_busPicDate" />
+
+    <TextView
+        android:id="@+id/tv_busLocNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Street Num:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_busPhone" />
+
+    <TextView
+        android:id="@+id/tv_busLocSt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Street name:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_busLocNum" />
+
+    <TextView
+        android:id="@+id/tv_busLocCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="City:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_busLocSt" />
+
+    <TextView
+        android:id="@+id/tv_busLocState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="State: "
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_busLocCity" />
+
+    <EditText
+        android:id="@+id/et_busLocSt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Street name"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_busLocSt"
+        app:layout_constraintTop_toTopOf="@+id/tv_busLocSt" />
+
+    <EditText
+        android:id="@+id/et_busLocState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:hint="State"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_busLocState"
+        app:layout_constraintTop_toTopOf="@+id/tv_busLocState" />
+
+    <EditText
+        android:id="@+id/et_busLocCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:hint="City"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_busLocCity"
+        app:layout_constraintTop_toTopOf="@+id/tv_busLocCity" />
+
+    <TextView
+        android:id="@+id/tv_busURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="URL:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_busLocState" />
+
+    <TextView
+        android:id="@+id/tv_busHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Hours:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_busURL" />
+
+    <EditText
+        android:id="@+id/et_busName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_busName"
+        app:layout_constraintTop_toTopOf="@+id/tv_busName" />
+
+    <EditText
+        android:id="@+id/et_busPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_busPhone"
+        app:layout_constraintTop_toTopOf="@+id/tv_busPhone" />
+
+    <EditText
+        android:id="@+id/et_busPicNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:hint="Photo number"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_busPicNum"
+        app:layout_constraintTop_toTopOf="@+id/tv_busPicNum" />
+
+    <EditText
+        android:id="@+id/et_busPicDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:hint="Photo Date"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_busPicDate"
+        app:layout_constraintTop_toTopOf="@+id/tv_busPicDate" />
+
+    <EditText
+        android:id="@+id/et_busPicURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:hint="Photo URL"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_busPicURL"
+        app:layout_constraintTop_toTopOf="@+id/tv_busPicURL" />
+
+    <EditText
+        android:id="@+id/et_busPicDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:hint="Photo Description"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_busPicDesc"
+        app:layout_constraintTop_toTopOf="@+id/tv_busPicDesc" />
+
+    <EditText
+        android:id="@+id/et_busLocNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:hint="Street number"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_busLocNum"
+        app:layout_constraintTop_toTopOf="@+id/tv_busLocNum" />
+
+    <EditText
+        android:id="@+id/et_busHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:hint="Hours"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_busHours"
+        app:layout_constraintTop_toTopOf="@+id/tv_busHours" />
+
+    <EditText
+        android:id="@+id/et_busURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:hint="URL"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_busURL"
+        app:layout_constraintTop_toTopOf="@+id/tv_busURL" />
+
+    <TextView
+        android:id="@+id/tv_idNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_busId"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_busOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="OK"
+        app:backgroundTint="#989595"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bt_busCancel"
+        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_busPicDesc" />
+
+    <Button
+        android:id="@+id/bt_busCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:text="CANCEL"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#989595"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bt_busOk"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
